@@ -61,11 +61,11 @@ TEXT_MESSAGES = {
         "main_menu": (
             f"{hide_link(pictures['Welcome'])}"
             "🤖 <b>Добро пожаловать!</b>\n\n"
-            "Я - твой личный проводник в мире приватных чатов. "
-            "Моя главная задача - предоставить тебе доступ к нашим приватным чатам, "
-            "опираясь на наличие у тебя соответствующих токенов.\n\n"
-            "<blockquote><b>Приватные чаты:</b>\n{chats}\n"
-            "<b>Необходимые токены:</b>\n{tokens}</blockquote>\n\n"
+            "Я - твой личный проводник в приватный чат Satoshi DAO. "
+            "Моя главная задача - предоставить тебе доступ к сообществу холдеров, "
+            "опираясь на наличие у тебя соответствующих жетонов Satoshi Tribute.\n\n"
+            "<blockquote><b>Приватный чат:</b>\n{chats}\n"
+            "<b>Необходимые жетоны:</b>\n{tokens}</blockquote>\n\n"
             "Жми на <b>Проверить наличие доступа</b>, чтобы узнать, будешь ли ты допущен!\n\n"
             "<b>Подключен к:</b> {wallet}"
         ),
@@ -81,17 +81,17 @@ TEXT_MESSAGES = {
         "deny_access": (
             f"{hide_link(pictures['Access denied'])}"
             "🚫 <b>Доступ запрещен</b>\n\n"
-            "К сожалению, не обнаружены необходимые токены в твоем кошельке.\n\n"
-            "Не расстраивайся, ты можешь <b>приобрести токены, перейдя по кнопкам</b> ниже и повторить попытку."
+            "К сожалению, не обнаружены необходимые жетоны в твоем кошельке.\n\n"
+            "Не расстраивайся, ты можешь <b>смайнить жетоны, отправив F на адрес контракта Satoshi Tribute или купив их на вторичном рынке, перейдя по кнопкам</b> ниже."
         ),
         "allow_access": (
             f"{hide_link(pictures['Access granted'])}"
             "🎉 <b>Поздравляем!</b>\n\n"
-            "Тебе открыт доступ к нашим приватным чатам.\n\n"
+            "Тебе открыт доступ к нашему приватному чату.\n\n"
             "<b>Переходи по кнопкам</b> ниже и подавай заявку на вступление, я сразу же их одобрю!"
         ),
         "user_kicked": (
-            "👮‍♀️ Пользователь {user} [{wallet}] был исключен из чата!"
+            "👮‍♀️ Пользователь {user} [{wallet}] был исключен из чата! На балансе нет жетонов Satoshi Tribute."
         ),
 
         "welcome_to_chat": (
@@ -101,12 +101,12 @@ TEXT_MESSAGES = {
         ),
         "top_holders": (
             f"{hide_link(pictures['TOP holders'])}"
-            f"🏆 <b>ТОП Держателей токенов:</b>\n\n"
+            f"🏆 <b>ТОП майнеров жетонов Satoshi Tribute:</b>\n\n"
             "{top_holders}"
         ),
         "top_select_token": (
             f"{hide_link(pictures['TOP select token'])}"
-            "🔍 <b>Выберите токен:</b>"
+            "🔍 <b>Выберите жетон:</b>"
         ),
         "balance_command": (
             f"{hide_link(pictures['Balance command'])}"
@@ -115,7 +115,7 @@ TEXT_MESSAGES = {
         "balance_command_no_tokens": (
             f"{hide_link(pictures['Balance command no tokens'])}"
             "👤 {user_full_name}\n\n"
-            "<b>Токены отсутствуют!</b>"
+            "<b>Жетоны Satoshi Tribute отсутствуют!</b>"
         ),
 
         "connect_wallet": (
@@ -167,7 +167,7 @@ TEXT_MESSAGES = {
         ),
         "token_info": (
             f"{hide_link(pictures['Main'])}"
-            "• <b>Информация о токене</b>\n\n"
+            "• <b>Информация о жетоне</b>\n\n"
             "• <b>Тип:</b>\n"
             "<blockquote>{token_type}</blockquote>\n"
             "• <b>Название:</b>\n"
@@ -179,18 +179,18 @@ TEXT_MESSAGES = {
             "• <b>Дата создания:</b>\n"
             "<blockquote>{token_created_at}</blockquote>"
         ),
-        "token_send_address": "<b>Введите адрес токена</b>\n\nРазрешены только адреса коллекций NFT и мастеров Jetton:",
-        "token_send_address_error": "Недопустимый адрес токена:\n{}",
-        "token_send_address_error_already_exist": "Токен с адресом {address} уже существует!",
+        "token_send_address": "<b>Введите адрес жетона</b>\n\nРазрешены только адреса коллекций NFT и мастер жетоны:",
+        "token_send_address_error": "Недопустимый адрес жетона:\n{}",
+        "token_send_address_error_already_exist": "Жетон с адресом {address} уже существует!",
         "token_send_address_error_not_supported": "Контракт {interfaces} не поддерживается.\nПоддерживаются только {supported_interfaces}.",
         "token_send_amount": (
-            "<b>Информация о токене</b>:\n\n"
+            "<b>Информация о жетоне</b>:\n\n"
             "• <b>Тип:</b>\n{token_type}\n"
             "• <b>Название:</b>\n{token_name}\n\n"
-            "<b>Введите минимальную сумму токена</b> для доступа к приватному чату:"
+            "<b>Введите минимальную сумму жетона</b> для доступа к приватному чату:"
         ),
-        "token_edit_amount": "<b>Введите новую сумму токена</b> для доступа к приватному чату:",
-        "token_send_amount_error": "Неверная сумма токена!",
+        "token_edit_amount": "<b>Введите новую сумму жетона</b> для доступа к приватному чату:",
+        "token_send_amount_error": "Неверная сумма жетона!",
         "admins_menu": (
             f"{hide_link(pictures['Main'])}"
             "<b>Меню администраторов</b>\n\nВыберите действие:"
@@ -223,11 +223,11 @@ TEXT_MESSAGES = {
         "main_menu": (
             f"{hide_link(pictures['Welcome'])}"
             "🤖 <b>Welcome!</b>\n\n"
-            "I'm your personal guide in the world of private chats. "
-            "My main task is to provide you with access to our private chats, "
-            "based on your possession of the corresponding tokens.\n\n"
-            "<blockquote><b>Private Chats:</b>\n{chats}\n"
-            "<b>Required Tokens:</b>\n{tokens}</blockquote>\n\n"
+            "I am your personal guide to the Satoshi DAO private chat. "
+            "MMy main task is to provide you with access to the community of holders, "
+            "based on the availability of the appropriate Satoshi Tribute jettons.\n\n"
+            "<blockquote><b>Private Chat:</b>\n{chats}\n"
+            "<b>Required Jettons:</b>\n{tokens}</blockquote>\n\n"
             "Click on <b>Check access availability</b> to find out if you'll be admitted!\n\n"
             "<b>Connected to:</b> {wallet}"
         ),
@@ -243,18 +243,18 @@ TEXT_MESSAGES = {
         "deny_access": (
             f"{hide_link(pictures['Access denied'])}"
             "🚫 <b>Access Denied</b>\n\n"
-            "Unfortunately, I did not detect the required tokens in your wallet.\n\n"
-            "Don't worry, you can <b>purchase tokens by clicking the buttons</b> below and try again."
+            "Unfortunately, I did not detect the required jettons in your wallet.\n\n"
+            "Don't worry, you can <b>receive the jettons by sending F to the Satoshi Tribute contract address or by purchasing them on the secondary market by clicking on the buttons</b> below."
         ),
         "allow_access": (
             f"{hide_link(pictures['Access granted'])}"
             "🎉 <b>Congratulations!</b>\n\n"
-            "You have access to our private chats.\n\n"
+            "You have access to our private chat.\n\n"
             "<b>Click on the buttons</b> below and submit an application to join, "
             "I will approve them immediately!"
         ),
         "user_kicked": (
-            "👮‍♀️ User {user} [{wallet}] was kicked from chat!"
+            "👮‍♀️ User {user} [{wallet}] was kicked from chat! There are no Satoshi Tribute tokens on the balance."
         ),
 
         "welcome_to_chat": (
@@ -264,12 +264,12 @@ TEXT_MESSAGES = {
         ),
         "top_holders": (
             f"{hide_link(pictures['TOP holders'])}"
-            f"🏆 <b>TOP Token Holders:</b>\n\n"
+            f"🏆 <b>TOP miners of Satoshi Tribute jettons:</b>\n\n"
             "{top_holders}"
         ),
         "top_select_token": (
             f"{hide_link(pictures['TOP select token'])}"
-            "🔍 <b>Select token:</b>"
+            "🔍 <b>Select jetton:</b>"
         ),
         "balance_command": (
             f"{hide_link(pictures['Balance command'])}"
@@ -278,7 +278,7 @@ TEXT_MESSAGES = {
         "balance_command_no_tokens": (
             f"{hide_link(pictures['Balance command no tokens'])}"
             "👤 {user_full_name}\n\n"
-            "<b>Tokens missing!</b>"
+            "<b>Jettons missing!</b>"
         ),
 
         "connect_wallet": (
@@ -326,11 +326,11 @@ TEXT_MESSAGES = {
         ),
         "tokens_menu": (
             f"{hide_link(pictures['Main'])}"
-            "<b>Tokens Menu</b>\n\nSelect action:"
+            "<b>Jettons Menu</b>\n\nSelect action:"
         ),
         "token_info": (
             f"{hide_link(pictures['Main'])}"
-            "• <b>Token Information</b>\n\n"
+            "• <b>Jetton Information</b>\n\n"
             "• <b>Type:</b>\n"
             "<blockquote>{token_type}</blockquote>\n"
             "• <b>Name:</b>\n"
@@ -342,20 +342,20 @@ TEXT_MESSAGES = {
             "• <b>Creation Date:</b>\n"
             "<blockquote>{token_created_at}</blockquote>"
         ),
-        "token_send_address": "<b>Enter Token Address</b>\n\nOnly NFT collection and Jetton master addresses are allowed:",
-        "token_send_address_error": "Invalid token address:\n{}",
-        "token_send_address_error_already_exist": "Token with address {address} already exists!",
+        "token_send_address": "<b>Enter Jetton Address</b>\n\nOnly NFT collection and Jetton master addresses are allowed:",
+        "token_send_address_error": "Invalid jetton address:\n{}",
+        "token_send_address_error_already_exist": "Jetton with address {address} already exists!",
         "token_send_address_error_not_supported": "Contract {interfaces} is not supported.\nOnly {supported_interfaces} are supported.",
         "token_send_amount": (
-            "<b>Token Information</b>:\n\n"
+            "<b>Jetton Information</b>:\n\n"
             "• <b>Type:</b>\n"
             "<blockquote>{token_type}</blockquote>\n"
             "• <b>Name:</b>\n"
             "<blockquote>{token_name}</blockquote>\n\n"
-            "<b>Enter the minimum token amount</b> to access the private chat:"
+            "<b>Enter the minimum jetton amount</b> to access the private chat:"
         ),
-        "token_edit_amount": "<b>Enter the new token amount</b> to access the private chat:",
-        "token_send_amount_error": "Invalid token amount!",
+        "token_edit_amount": "<b>Enter the new jetton amount</b> to access the private chat:",
+        "token_send_amount_error": "Invalid jetton amount!",
         "admins_menu": (
             f"{hide_link(pictures['Main'])}"
             "<b>Administrators Menu</b>\n\nSelect action:"
